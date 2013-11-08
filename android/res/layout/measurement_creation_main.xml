@@ -21,7 +21,19 @@
     android:layout_height="match_parent" 
     android:id="@+id/measurementCreationLayout"
     android:stretchColumns="1">
-    <TableRow
+      <TableRow android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/tableRow">
+          <TextView android:layout_width="fill_parent" android:layout_height="wrap_content"
+                    android:textSize="@dimen/veryLargeTextSize" android:layout_gravity="center_vertical"
+                    android:text="@string/measureIdLabel" android:linksClickable="false" android:layout_span="1"
+                    android:id="@+id/measureIdLabel" android:gravity="center"/>
+          <EditText
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="1"
+                  android:id="@+id/measureIdEditText" android:layout_column="2" android:textSize="@dimen/veryLargeTextSize"
+                  android:gravity="right" android:numeric="integer" android:inputType="numberDecimal" android:imeOptions="actionDone" android:selectAllOnFocus="true"/>
+      </TableRow>
+      <TableRow
       android:layout_width="match_parent"
       android:layout_height="wrap_content">
       <TextView
@@ -29,35 +41,52 @@
         android:layout_height="wrap_content"
         android:textSize="@dimen/regularTextSize"
         android:layout_gravity="right|center_vertical"
-        android:text="@string/measurementTypePrompt"/>
+        android:text="@string/measurementTypePrompt" android:layout_span="1"/>
       <LinearLayout
         android:paddingLeft="@dimen/marginBetweenColumns"
         android:orientation="horizontal"
         android:layout_width="match_parent" 
-        android:layout_height="wrap_content">
-        <Spinner android:id="@+id/measurementTypeSpinner"
+        android:layout_height="wrap_content" android:layout_column="2">
+          <Spinner android:id="@+id/measurementTypeSpinner"
           android:layout_width="match_parent"
-          android:layout_height="40dip"
+          android:layout_height="60dip"
           android:prompt="@string/measurementTypePrompt"/>
       </LinearLayout>        
-    </TableRow>  
-    <TableRow
+    </TableRow>
+      <TableRow android:layout_width="match_parent" android:layout_height="wrap_content">
+          <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:textSize="@dimen/regularTextSize" android:layout_gravity="right|center_vertical"
+                    android:text="@string/targetHostPrompt"/>
+          <LinearLayout android:paddingLeft="@dimen/marginBetweenColumns" android:orientation="horizontal"
+                        android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:layout_column="2">
+              <EditText android:id="@+id/targetHostText"
+                android:layout_height="@dimen/editTextBoxHeight"
+                android:layout_width="match_parent"
+                android:hint="@string/targetHostHint"
+                android:inputType="textUri"
+                android:lines="1"
+                android:textSize="@dimen/smallTextSize"
+                android:text="@string/defaultTargetHost" android:singleLine="false"/>
+          </LinearLayout>
+      </TableRow>
+      <TableRow
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/pingView"
         android:paddingTop="@dimen/marginBetweenRows">
-      <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="right|center_vertical"
-        android:textSize="@dimen/regularTextSize"
-        android:text="@string/pingTargetLabel"/>     
-      <LinearLayout
+          <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:textSize="@dimen/regularTextSize"
+            android:text="@string/pingTargetLabel" android:layout_column="0"/>
+          <LinearLayout
         android:paddingLeft="@dimen/marginBetweenColumns"
         android:orientation="horizontal"
         android:layout_width="match_parent" 
-        android:layout_height="wrap_content">
-        <EditText android:id="@+id/pingTargetText"    
+        android:layout_height="wrap_content" android:layout_column="2">
+        <EditText android:id="@+id/pingTargetText"
           android:layout_height="@dimen/editTextBoxHeight"
           android:layout_width="match_parent"
           android:hint="@string/pingTargetHint"
@@ -65,7 +94,7 @@
           android:lines="1"
           android:textSize="@dimen/smallTextSize"
           android:text="@string/defaultDomain"/>
-      </LinearLayout>    
+      </LinearLayout>
     </TableRow>
     <TableRow
         android:layout_width="match_parent"
@@ -77,12 +106,12 @@
         android:layout_height="wrap_content"
         android:layout_gravity="right|center_vertical"
         android:textSize="@dimen/regularTextSize"
-        android:text="@string/tracerouteTargetLabel"/>     
+        android:text="@string/tracerouteTargetLabel"/>
       <LinearLayout
         android:paddingLeft="@dimen/marginBetweenColumns"
         android:orientation="horizontal"
         android:layout_width="match_parent" 
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content" android:layout_column="2">
         <EditText android:id="@+id/tracerouteTargetText"    
           android:layout_height="@dimen/editTextBoxHeight"
           android:layout_width="match_parent"
@@ -108,7 +137,7 @@
         android:paddingLeft="@dimen/marginBetweenColumns"
         android:orientation="horizontal"
         android:layout_width="match_parent" 
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content" android:layout_column="2">
         <EditText android:id="@+id/httpUrlText"
           android:layout_height="@dimen/editTextBoxHeight"
           android:layout_width="match_parent"
@@ -134,7 +163,7 @@
         android:paddingLeft="@dimen/marginBetweenColumns"
         android:orientation="horizontal"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content" android:layout_column="2">
         <EditText android:id="@+id/dnsLookupText"
           android:layout_height="@dimen/editTextBoxHeight"
           android:layout_width="match_parent"
@@ -157,10 +186,10 @@
         android:text="@string/UDPBurstDirLabel"/>
       <LinearLayout
         android:paddingLeft="@dimen/marginBetweenColumns"
-        android:orientation="horizontal"  
+        android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-        <RadioGroup
+        android:layout_height="wrap_content" android:layout_column="2">
+          <RadioGroup
           android:layout_width="fill_parent"
           android:layout_height="wrap_content"
           android:orientation="horizontal">
@@ -178,6 +207,64 @@
     <TableRow
       android:layout_width="match_parent"
       android:layout_height="wrap_content"
+      android:id="@+id/UDPBurstDirView2"
+      android:paddingTop="@dimen/marginBetweenRows">
+      <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|center_vertical"
+        android:textSize="@dimen/regularTextSize"
+        android:text="@string/UDPPacketsPerSecond"/>
+      <LinearLayout
+        android:paddingLeft="@dimen/marginBetweenColumns"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:layout_column="2">
+
+        <EditText
+            android:id="@+id/UDPPacketsPerSecondText"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/editTextBoxHeight"
+            android:hint="@string/pingTargetHint"
+            android:inputType="numberDecimal"
+            android:lines="1"
+            android:text="@string/DefaultUDPPacketsPerSecondText"
+            android:textSize="@dimen/smallTextSize" />
+
+      </LinearLayout>
+    </TableRow>
+    <TableRow
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:id="@+id/UDPBurstDirView3"
+      android:paddingTop="@dimen/marginBetweenRows">
+      <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|center_vertical"
+        android:textSize="@dimen/regularTextSize"
+        android:text="@string/UDPNumberOfPackets"/>
+      <LinearLayout
+        android:paddingLeft="@dimen/marginBetweenColumns"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:layout_column="2">
+
+        <EditText
+            android:id="@+id/UDPNumberOfPacketsText"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/editTextBoxHeight"
+            android:hint="@string/pingTargetHint"
+            android:inputType="numberDecimal"
+            android:lines="1"
+            android:text="@string/DefaultUDPNumberOfPacketsText"
+            android:textSize="@dimen/smallTextSize" />
+
+      </LinearLayout>
+    </TableRow>
+    <TableRow
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
       android:id="@+id/TCPThroughputDirView">
       
       <TextView
@@ -190,7 +277,7 @@
         android:paddingLeft="@dimen/marginBetweenColumns"
         android:orientation="horizontal"  
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content" android:layout_column="2">
         <RadioGroup
           android:layout_width="fill_parent"
           android:layout_height="wrap_content"
@@ -206,6 +293,6 @@
         </RadioGroup> 
       </LinearLayout>        
     </TableRow>
-    </TableLayout>
+  </TableLayout>
   </ScrollView>
 </RelativeLayout>

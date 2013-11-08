@@ -49,6 +49,7 @@ public class MeasurementResult {
   private String type;
   private MeasurementDesc parameters;
   private HashMap<String, String> values;
+  private String detail;
   
   /**
    * @param deviceProperty
@@ -69,11 +70,22 @@ public class MeasurementResult {
     this.parameters = measurementDesc;
     this.parameters.parameters = null;
     this.values = new HashMap<String, String>();
+    detail = "";
   }
  
   /* Returns the type of this result */ 
   public String getType() {
     return parameters.getType();
+  }
+  
+  public void setDetail(String detail)
+  {
+	  this.detail = detail;
+  }
+  
+  public String getDetail()
+  {
+	  return detail;
   }
   
   /* Add the measurement results of type String into the class */

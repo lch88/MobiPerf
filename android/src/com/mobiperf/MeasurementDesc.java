@@ -92,5 +92,13 @@ public abstract class MeasurementDesc {
   public String toString() {
     return "<MeasurementTask> " + this.type + " deadline:" + endTime +
       " params:" + parameters;
-  }  
+  }
+
+  public String getDir() {
+	if (parameters != null) {
+		if (parameters.containsKey("direction"))
+		  return parameters.get("direction");
+	}
+    return "na";
+  }
 }

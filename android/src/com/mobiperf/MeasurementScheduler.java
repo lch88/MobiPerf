@@ -26,6 +26,7 @@ import android.content.Intent;
 import android.content.IntentFilter;
 import android.content.SharedPreferences;
 import android.os.Binder;
+import android.os.CountDownTimer;
 import android.os.IBinder;
 import android.preference.PreferenceManager;
 
@@ -54,6 +55,7 @@ import java.util.concurrent.PriorityBlockingQueue;
 
 import com.google.myjson.reflect.TypeToken;
 import com.mobiperf.BatteryCapPowerManager.PowerAwareTask;
+import com.mobiperf.util.IOUtils;
 import com.mobiperf.util.MeasurementJsonConvertor;
 import com.mobiperf.util.PhoneUtils;
 import com.mobiperf.R;
@@ -507,7 +509,7 @@ public class MeasurementScheduler extends Service {
   
   /** Submit a MeasurementTask to the scheduler. Caller of this method can broadcast
    * an intent with MEASUREMENT_ACTION to start the measurement immediately.*/
-  public boolean submitTask(MeasurementTask task) {
+   public boolean submitTask(MeasurementTask task) {
     try {
       // Immediately handles measurements created by user
       if (task.getDescription().priority == MeasurementTask.USER_PRIORITY) {
@@ -662,6 +664,9 @@ public class MeasurementScheduler extends Service {
                 this.pendingTasks.remove(task);
                 if (!future.isCancelled()) {
                   result = future.get();
+                  // Write result to file
+                  Logger.d("About to write");
+                  IOUtils.writeResultToFile(task.getId(), task.getType(), task.getDescription().getDir(), result.toString() + "\n" + result.getDetail());
                   finishedTasks.add(result);
                 } else {
                   Logger.e("Task execution was canceled");
@@ -733,7 +738,7 @@ public class MeasurementScheduler extends Service {
       try {
         persistState();
         uploadResults();
-        getTasksFromServer();
+        //getTasksFromServer();
         // Also reset checkin if we get a success
         resetCheckin();
         // Schedule the new tasks

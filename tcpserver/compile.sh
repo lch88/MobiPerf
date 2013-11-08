@@ -11,14 +11,14 @@ then
 fi
 cd ..
 
-mkdir mlab 2> /dev/null
+mkdir out 2> /dev/null
 
 cd bin
 for i in Uplink Downlink ServerConfig
 do
 	echo "Main-Class: servers.$i" > manifest
 	jar cvfm $i.jar manifest servers/$i*.class servers/Definition.class servers/Utilities.class
-	mv $i.jar ../mlab
+	mv $i.jar ../out
 done
 
 rm manifest

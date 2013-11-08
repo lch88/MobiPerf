@@ -14,8 +14,6 @@
  */
 package com.mobiperf;
 
-import com.mobiperf.R;
-
 import android.app.Activity;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager.NameNotFoundException;
@@ -33,7 +31,7 @@ public class About extends Activity {
     
     try {
       PackageInfo pInfo = getPackageManager().getPackageInfo(getPackageName(), 0);
-      version.setText("Version: "+pInfo.versionName);
+      version.setText("Version: " + pInfo.versionName);
     } catch (NameNotFoundException e) {
       e.printStackTrace();
     }

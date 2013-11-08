@@ -135,6 +135,11 @@ public class PingTask extends MeasurementTask {
     super(new PingDesc(desc.key, desc.startTime, desc.endTime, desc.intervalSec,
       desc.count, desc.priority, desc.parameters), parent);
   }
+
+  public PingTask(int id, MeasurementDesc desc, Context parent) {
+    super(id, new PingDesc(desc.key, desc.startTime, desc.endTime, desc.intervalSec,
+        desc.count, desc.priority, desc.parameters), parent);
+  }
   
   /**
    * Returns a copy of the PingTask

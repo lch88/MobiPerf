@@ -41,10 +41,10 @@ import android.content.Context;
  */
 public class TCPThroughputTask extends MeasurementTask {
   // default constant here
-  public static final String DESCRIPTOR = "TCP Speed Test";
-  public static final int PORT_DOWNLINK = 6001;
-  public static final int PORT_UPLINK = 6002;
-  public static final int PORT_CONFIG = 6003;
+  public static final String DESCRIPTOR = "TCP Speed";
+  public static final int PORT_DOWNLINK = 26001;
+  public static final int PORT_UPLINK = 26002;
+  public static final int PORT_CONFIG = 26003;
   public static final String TYPE = "tcpthroughput";
 
   // Timing related
@@ -87,6 +87,14 @@ public class TCPThroughputTask extends MeasurementTask {
   public TCPThroughputTask(MeasurementDesc desc, Context context) {
     super(new TCPThroughputDesc(desc.key, desc.startTime, desc.endTime, 
           desc.intervalSec, desc.count, desc.priority, desc.parameters), context);
+    this.context = context;
+    Logger.i("Create new throughput task");
+  }
+
+  // class constructor
+  public TCPThroughputTask(int id, MeasurementDesc desc, Context context) {
+    super(id, new TCPThroughputDesc(desc.key, desc.startTime, desc.endTime,
+        desc.intervalSec, desc.count, desc.priority, desc.parameters), context);
     this.context = context;
     Logger.i("Create new throughput task");
   }
@@ -297,22 +305,23 @@ public class TCPThroughputTask extends MeasurementTask {
     TCPThroughputDesc desc = (TCPThroughputDesc)measurementDesc;
     
     // Apply MLabNS lookup to fetch FQDN
-    if (!desc.target.equals(MLabNS.TARGET)) {
-      Logger.i("Not using MLab server!");
-      throw new InvalidParameterException("Unknown target " + desc.target +
-                                          " for TCPThroughput");
-    }
+//    if (!desc.target.equals(MLabNS.TARGET)) {
+//      Logger.i("Not using MLab server!");
+//      throw new InvalidParameterException("Unknown target " + desc.target +
+//                                          " for TCPThroughput");
+//    }
     
-    try {
-       ArrayList<String> mlabResult = MLabNS.Lookup(context, "mobiperf");
-       if (mlabResult.size() == 1) {
-         desc.target = mlabResult.get(0);
-       } else {
-         throw new MeasurementError("Invalid MLabNS result");
-       }
-    } catch (InvalidParameterException e) {
-      throw new MeasurementError(e.getMessage());
-    }
+//    try {
+//       ArrayList<String> mlabResult = MLabNS.Lookup(context, "mobiperf");
+//       if (mlabResult.size() == 1) {
+//         desc.target = mlabResult.get(0);
+//       } else {
+//         throw new MeasurementError("Invalid MLabNS result");
+//       }
+//    } catch (InvalidParameterException e) {
+//      throw new MeasurementError(e.getMessage());
+//    }
+
     Logger.i("Setting target to: " + desc.target);
     
     PhoneUtils phoneUtils = PhoneUtils.getPhoneUtils();
@@ -578,7 +587,7 @@ public class TCPThroughputTask extends MeasurementTask {
    * Helper functions
    *****************************************************************
    * update the total received packet size
-   * @param time period increment
+   * @param: time period increment
    */
   private void updateSize(int delta) {
     double gtime = System.currentTimeMillis() - this.taskStartTime;

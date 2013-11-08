@@ -40,7 +40,8 @@ public abstract class MeasurementTask implements Callable<MeasurementResult>, Co
   public static final int USER_PRIORITY = Integer.MIN_VALUE;
   public static final int INVALID_PRIORITY = Integer.MAX_VALUE;
   public static final int INFINITE_COUNT = -1;
-  
+
+  protected int id;
   protected MeasurementDesc measurementDesc;
   protected Context parent;
   /* When updating the 'progress' field, ensure that it's within the range between 0 and
@@ -67,6 +68,8 @@ public abstract class MeasurementTask implements Callable<MeasurementResult>, Co
     measurementDescToType.put(DnsLookupTask.DESCRIPTOR, DnsLookupTask.TYPE);
     measurementTypes.put(TCPThroughputTask.TYPE, TCPThroughputTask.class);
     measurementDescToType.put(TCPThroughputTask.DESCRIPTOR, TCPThroughputTask.TYPE);
+    measurementTypes.put(UDPBurstTask.TYPE, UDPBurstTask.class);
+    measurementDescToType.put(UDPBurstTask.DESCRIPTOR, UDPBurstTask.TYPE);
   }
   
   /** Gets the currently available measurement descriptions*/
@@ -103,11 +106,28 @@ public abstract class MeasurementTask implements Callable<MeasurementResult>, Co
    */
   protected MeasurementTask(MeasurementDesc measurementDesc, Context parent) {
     super();
+    this.id = -1;
     this.measurementDesc = measurementDesc;
     this.parent = parent;
     this.progress = 0;
   }
-  
+
+  protected MeasurementTask(int id, MeasurementDesc measurementDesc, Context parent) {
+    super();
+    this.id = id;
+    this.measurementDesc = measurementDesc;
+    this.parent = parent;
+    this.progress = 0;
+  }
+
+  public int getId() {
+    return id;
+  }
+
+  public void setId(int id) {
+    this.id = id;
+  }
+
   /* Compare priority as the first order. Then compare start time.*/
   @Override
   public int compareTo(Object t) {

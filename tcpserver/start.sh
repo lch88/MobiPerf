@@ -1,10 +1,10 @@
 #!/bin/bash
 
-cd /home/michigan_1/mobiperf
+cd out
 
-dl_port=6001
-ul_port=6002
-config_port=6003
+dl_port=26001
+ul_port=26002
+config_port=26003
 
 for i in Downlink Uplink ServerConfig
 do
