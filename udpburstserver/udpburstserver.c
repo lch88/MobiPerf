@@ -21,6 +21,8 @@
 #include <strings.h>
 #include <string.h>
 #include <sys/time.h>
+#include <sys/stat.h>
+#include <sys/types.h>
 #include <time.h>
 #include <assert.h>
 #include <unistd.h>
@@ -394,6 +396,15 @@ int main(int argc, char**argv) {
 	if (lport < 1 || lport > 65535) {
 		printf("Invalid port %ld\n", lport);
 		return -1;
+	}
+
+	// initialize log folder
+	{
+		struct stat st = {0};
+
+		if (stat("./log", &st) == -1) {
+		    mkdir("./log", 0775);
+		}
 	}
 
 	// Initialize the client array
