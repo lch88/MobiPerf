@@ -202,7 +202,7 @@ public class TCPThroughputTask extends MeasurementTask {
       }
 
       String dir = null;
-      if ((dir = params.get("dir_up")) != null && dir.length() > 0) {
+      if ((dir = params.get("direction")) != null && dir.length() > 0) {
         if (dir.compareTo("Up") == 0 || dir.compareTo("true") == 0) {
           this.dir_up = true;
         }

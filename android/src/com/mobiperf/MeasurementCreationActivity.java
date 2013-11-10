@@ -179,9 +179,6 @@ public class MeasurementCreationActivity extends Activity {
       MeasurementCreationActivity.this.tcpDir = (String) rb.getText();
     }
   }
-
-  private static String CD_ACTION = "action_countdown";
-  private static long CD_TIME = 5 * 1000;
   
   private class ButtonOnClickListener implements OnClickListener {
     @Override
@@ -193,13 +190,6 @@ public class MeasurementCreationActivity extends Activity {
       }
     }
   }
-
-  BroadcastReceiver cdReceiver = new BroadcastReceiver() {
-    @Override
-    public void onReceive(Context context, Intent intent) {
-      Logger.d("abcd");
-    }
-  };
 
   private void reserveTask() {
     MeasurementTask newTask = null;
@@ -289,7 +279,7 @@ public class MeasurementCreationActivity extends Activity {
         // TODO: Make target ip address and port configurable by user
         params.put("target", targetHostText.getText().toString());
 //        params.put("target", MLabNS.TARGET);
-        params.put("dir_up", tcpDir);
+        params.put("direction", tcpDir);
         TCPThroughputDesc desc = new TCPThroughputDesc(null,
             Calendar.getInstance().getTime(),
             null,

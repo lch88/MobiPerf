@@ -1,22 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="AndroidConfiguredLogFilters">
-    <filters>
-      <filter>
-        <option name="logLevel" value="verbose" />
-        <option name="logMessagePattern" value="" />
-        <option name="logTagPattern" value="Mobiperf" />
-        <option name="name" value="Mobiperf" />
-        <option name="pid" value="" />
-      </filter>
-    </filters>
-  </component>
   <component name="AndroidDesignerProfile">
     <option name="fullProfile">
       <profile>
         <option name="device" value="2.7in QVGA" />
         <option name="deviceConfiguration" value="Portrait" />
-        <option name="targetHashString" value="android-18" />
+        <option name="targetHashString" value="android-17" />
         <option name="theme" value="Theme.Light" />
       </profile>
     </option>
@@ -28,49 +17,24 @@
         <option name="device" value="2.7in QVGA" />
         <option name="dockMode" value="" />
         <option name="nightMode" value="notnight" />
-        <option name="targetHashString" value="android-18" />
+        <option name="targetHashString" value="android-17" />
         <option name="theme" value="Theme.Light" />
         <option name="visible" value="false" />
       </GlobalState>
     </option>
   </component>
-  <component name="AndroidLogFilters">
-    <option name="TOOL_WINDOW_LOG_LEVEL" value="DEBUG" />
-    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Mobiperf" />
-  </component>
   <component name="ChangeListManager">
-    <list default="true" id="9a9bf42d-46b8-4b08-8a6a-6dc679f05ca8" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/mobiperf/MeasurementCreationActivity.java" afterPath="$PROJECT_DIR$/src/com/mobiperf/MeasurementCreationActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/mobiperf/MeasurementDesc.java" afterPath="$PROJECT_DIR$/src/com/mobiperf/MeasurementDesc.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/mobiperf/measurements/TCPThroughputTask.java" afterPath="$PROJECT_DIR$/src/com/mobiperf/measurements/TCPThroughputTask.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android.iws" afterPath="$PROJECT_DIR$/android.iws" />
-    </list>
+    <list default="true" id="9a9bf42d-46b8-4b08-8a6a-6dc679f05ca8" name="Default" comment="" />
     <ignored path="android.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="9a9bf42d-46b8-4b08-8a6a-6dc679f05ca8" time="1384011543296" ignored="false" />
-    <file path="/TCPThroughputTask.java" changelist="9a9bf42d-46b8-4b08-8a6a-6dc679f05ca8" time="1383892865428" ignored="false" />
-    <file path="/a.java" changelist="9a9bf42d-46b8-4b08-8a6a-6dc679f05ca8" time="1383924224985" ignored="false" />
-    <file path="/UDPBurstTask.java" changelist="9a9bf42d-46b8-4b08-8a6a-6dc679f05ca8" time="1383892912451" ignored="false" />
-    <file path="/MeasurementCreationActivity.java" changelist="9a9bf42d-46b8-4b08-8a6a-6dc679f05ca8" time="1383895147763" ignored="false" />
-    <file path="/MeasurementTask.java" changelist="9a9bf42d-46b8-4b08-8a6a-6dc679f05ca8" time="1383892724899" ignored="false" />
+    <file path="/Dummy.txt" changelist="9a9bf42d-46b8-4b08-8a6a-6dc679f05ca8" time="1383910512256" ignored="false" />
+    <file path="/TCPThroughputTask.java" changelist="9a9bf42d-46b8-4b08-8a6a-6dc679f05ca8" time="1383806450589" ignored="false" />
+    <file path="/a.java" changelist="9a9bf42d-46b8-4b08-8a6a-6dc679f05ca8" time="1383806406610" ignored="false" />
+    <file path="/UDPBurstTask.java" changelist="9a9bf42d-46b8-4b08-8a6a-6dc679f05ca8" time="1383806510166" ignored="false" />
+    <file path="/MeasurementCreationActivity.java" changelist="9a9bf42d-46b8-4b08-8a6a-6dc679f05ca8" time="1383806702055" ignored="false" />
+    <file path="/MeasurementTask.java" changelist="9a9bf42d-46b8-4b08-8a6a-6dc679f05ca8" time="1383806874860" ignored="false" />
     <file path="/AlarmWakeLock.java" changelist="9a9bf42d-46b8-4b08-8a6a-6dc679f05ca8" time="1383825309017" ignored="false" />
-    <file path="/strings.xml" changelist="9a9bf42d-46b8-4b08-8a6a-6dc679f05ca8" time="1383837454930" ignored="false" />
-    <file path="/fragment.java" changelist="9a9bf42d-46b8-4b08-8a6a-6dc679f05ca8" time="1383859040435" ignored="false" />
-    <file path="/measurement_creation_main.xml" changelist="9a9bf42d-46b8-4b08-8a6a-6dc679f05ca8" time="1383895605672" ignored="false" />
-    <file path="/MeasurementOnActivity.java" changelist="9a9bf42d-46b8-4b08-8a6a-6dc679f05ca8" time="1383891604704" ignored="false" />
-    <file path="$PROJECT_DIR$/../../../../IdeaProjects/SmartLoggerLite/project.properties" changelist="9a9bf42d-46b8-4b08-8a6a-6dc679f05ca8" time="1383881260875" ignored="false" />
-    <file path="/AndroidManifest.xml" changelist="9a9bf42d-46b8-4b08-8a6a-6dc679f05ca8" time="1383891018103" ignored="false" />
-    <file path="/a.dummy" changelist="9a9bf42d-46b8-4b08-8a6a-6dc679f05ca8" time="1383887326279" ignored="false" />
-    <file path="/MeasurementScheduler.java" changelist="9a9bf42d-46b8-4b08-8a6a-6dc679f05ca8" time="1383906342114" ignored="false" />
-    <file path="/PingTask.java" changelist="9a9bf42d-46b8-4b08-8a6a-6dc679f05ca8" time="1383892983421" ignored="false" />
-    <file path="/IOUtils.java" changelist="9a9bf42d-46b8-4b08-8a6a-6dc679f05ca8" time="1383898685182" ignored="false" />
-    <file path="/MeasurementDesc.java" changelist="9a9bf42d-46b8-4b08-8a6a-6dc679f05ca8" time="1383899503686" ignored="false" />
-    <file path="/MeasurementResult.java" changelist="9a9bf42d-46b8-4b08-8a6a-6dc679f05ca8" time="1383906406119" ignored="false" />
-    <file path="$PROJECT_DIR$/../../../IdeaProjects/ClairvoyanceLite/gen/edu/nclab/clairvoyancelite/R.java" changelist="9a9bf42d-46b8-4b08-8a6a-6dc679f05ca8" time="1383928209812" ignored="false" />
-    <file path="$PROJECT_DIR$/../../../IdeaProjects/ClairvoyanceLite/gen/edu/nclab/clairvoyancelite/BuildConfig.java" changelist="9a9bf42d-46b8-4b08-8a6a-6dc679f05ca8" time="1383928860568" ignored="false" />
-    <file path="$PROJECT_DIR$/../../../IdeaProjects/UsageAnalyzerOne/src/main/java/edu/kaist/usageanalyzerone/jobs/defaultanalysisjob/tasks/MakeEntryTaskCh.java" changelist="9a9bf42d-46b8-4b08-8a6a-6dc679f05ca8" time="1384084847043" ignored="false" />
-    <file path="$PROJECT_DIR$/../../../IdeaProjects/UsageAnalyzerOne/src/main/java/edu/kaist/usageanalyzerone/jobs/defaultanalysisjob/tasks/BuildMemoryDBTask.java" changelist="9a9bf42d-46b8-4b08-8a6a-6dc679f05ca8" time="1384085605186" ignored="false" />
-    <file path="$PROJECT_DIR$/../../../IdeaProjects/UsageAnalyzerOne/src/main/java/edu/kaist/usageanalyzerone/jobs/defaultanalysisjob/tasks/MakeEntryTask.java" changelist="9a9bf42d-46b8-4b08-8a6a-6dc679f05ca8" time="1384089568474" ignored="false" />
+    <file path="/a.xml" changelist="9a9bf42d-46b8-4b08-8a6a-6dc679f05ca8" time="1383910569196" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,7 +49,6 @@
     <disable_hints />
   </component>
   <component name="DebuggerManager">
-    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
       <breakpoint>
         <option name="NOTIFY_CAUGHT" value="true" />
@@ -122,6 +85,7 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </breakpoint_any>
+    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_rules />
     <ui_properties />
   </component>
@@ -130,98 +94,7 @@
     <favorites_list name="android" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="TCPThroughputTask.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/mobiperf/measurements/TCPThroughputTask.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="120" column="23" selection-start="4902" selection-end="4902" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MeasurementCreationActivity.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/mobiperf/MeasurementCreationActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="281" column="29" selection-start="12664" selection-end="12664" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MeasurementOnActivity.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/mobiperf/MeasurementOnActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="45" column="56" selection-start="1196" selection-end="1196" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UDPBurstTask.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/mobiperf/measurements/UDPBurstTask.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="41" column="20" selection-start="1300" selection-end="1300" vertical-scroll-proportion="0.39580908">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MeasurementScheduler.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/mobiperf/MeasurementScheduler.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="668" column="83" selection-start="24294" selection-end="24294" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MeasurementTask.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/mobiperf/MeasurementTask.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="162" column="25" selection-start="6063" selection-end="6063" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MeasurementResult.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/mobiperf/MeasurementResult.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="265" column="17" selection-start="9635" selection-end="9635" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MeasurementDesc.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/mobiperf/MeasurementDesc.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="98" column="38" selection-start="3853" selection-end="3853" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Util.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/mobiperf/util/Util.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="43" column="13" selection-start="1417" selection-end="1417" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="IOUtils.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/mobiperf/util/IOUtils.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="27" selection-start="890" selection-end="890" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -232,6 +105,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="GitLogSettings">
+    <option name="myStructureFilterPaths" />
     <option name="myDateState">
       <MyDateState />
     </option>
@@ -239,46 +113,21 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/com/mobiperf/measurements/TracerouteTask.java" />
-        <option value="$PROJECT_DIR$/src/com/mobiperf/measurements/DnsLookupTask.java" />
-        <option value="$PROJECT_DIR$/res/layout/Empty.xml" />
-        <option value="$PROJECT_DIR$/res/layout/empty.xml" />
-        <option value="$PROJECT_DIR$/src/com/mobiperf/MeasurementOnActivity.java" />
-        <option value="$PROJECT_DIR$/AndroidManifest.xml" />
-        <option value="$PROJECT_DIR$/src/com/mobiperf/MeasurementTask.java" />
         <option value="$PROJECT_DIR$/src/com/mobiperf/measurements/UDPBurstTask.java" />
-        <option value="$PROJECT_DIR$/src/com/mobiperf/measurements/PingTask.java" />
-        <option value="$PROJECT_DIR$/res/layout/measurement_creation_main.xml" />
-        <option value="$PROJECT_DIR$/src/com/mobiperf/util/IOUtils.java" />
-        <option value="$PROJECT_DIR$/src/com/mobiperf/MeasurementResult.java" />
-        <option value="$PROJECT_DIR$/src/com/mobiperf/MeasurementScheduler.java" />
-        <option value="$PROJECT_DIR$/src/com/mobiperf/MeasurementDesc.java" />
-        <option value="$PROJECT_DIR$/src/com/mobiperf/MeasurementCreationActivity.java" />
         <option value="$PROJECT_DIR$/src/com/mobiperf/measurements/TCPThroughputTask.java" />
+        <option value="$PROJECT_DIR$/src/com/mobiperf/MeasurementCreationActivity.java" />
+        <option value="$PROJECT_DIR$/src/com/mobiperf/MeasurementTask.java" />
+        <option value="$PROJECT_DIR$/src/com/mobiperf/About.java" />
+        <option value="$PROJECT_DIR$/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/src/com/mobiperf/util/AlarmWakeLock.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="54" />
-    <option name="y" value="-8" />
-    <option name="width" value="1354" />
-    <option name="height" value="1066" />
-  </component>
-  <component name="ProjectInspectionProfilesVisibleTreeState">
-    <entry key="Project Default">
-      <profile-state>
-        <expanded-state>
-          <State>
-            <id />
-          </State>
-        </expanded-state>
-        <selected-state>
-          <State>
-            <id>Abstraction issues</id>
-          </State>
-        </selected-state>
-      </profile-state>
-    </entry>
+    <option name="x" value="56" />
+    <option name="y" value="22" />
+    <option name="width" value="1384" />
+    <option name="height" value="878" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -306,6 +155,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -386,29 +236,56 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="android" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="android" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="android" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="android" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="layout" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="GoToFile.includeJavaFiles" value="false" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="MemberChooser.sorted" value="false" />
     <property name="recentsLimit" value="5" />
-    <property name="options.lastSelected" value="preferences.fileTypes" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/tests" />
-    <property name="AndroidLayoutSelectedEditor" value="text-editor" />
+    <property name="options.lastSelected" value="preferences.sourceCode.XML" />
+    <property name="AndroidLayoutSelectedEditor" value="android-designer" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_SERIALS" value="ce1c5581" />
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
-    <property name="restartRequiresConfirmation" value="true" />
     <property name="MemberChooser.showClasses" value="true" />
-    <property name="FullScreen" value="false" />
     <property name="GoToClass.includeLibraries" value="false" />
     <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
@@ -541,7 +418,7 @@
       <option name="ACTIVITY_CLASS" value="" />
       <option name="MODE" value="default_activity" />
       <option name="DEPLOY" value="true" />
-      <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
+      <option name="TARGET_SELECTION_MODE" value="EMULATOR" />
       <option name="PREFERRED_AVD" value="" />
       <option name="USE_COMMAND_LINE" value="true" />
       <option name="COMMAND_LINE" value="" />
@@ -550,8 +427,6 @@
       <option name="NETWORK_SPEED" value="full" />
       <option name="NETWORK_LATENCY" value="none" />
       <option name="CLEAR_LOGCAT" value="false" />
-      <RunnerSettings RunnerId="AndroidDebugRunner" />
-      <ConfigurationWrapper RunnerId="AndroidDebugRunner" />
       <method />
     </configuration>
     <list size="1">
@@ -609,32 +484,31 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="54" y="-8" width="1354" height="1066" extended-state="6" />
-    <editor active="true" />
+    <frame x="56" y="22" width="1384" height="878" extended-state="6" />
+    <editor active="false" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32917705" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32884902" sideWeight="0.67150396" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32884902" sideWeight="0.67150396" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32849604" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.498503" sideWeight="0.67150396" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.37155622" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32973805" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24979591" sideWeight="0.67103237" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32894737" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21627907" sideWeight="0.62842894" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3042394" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.19655667" sideWeight="0.6957606" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26532137" sideWeight="0.67150396" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3737446" sideWeight="0.6957606" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32979593" sideWeight="0.6702619" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3117207" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32668328" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.16212338" sideWeight="0.68827933" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -698,125 +572,106 @@
   <component name="XDebuggerManager">
     <breakpoint-manager />
   </component>
-  <component name="antWorkspaceConfiguration">
-    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
-    <option name="FILTER_TARGETS" value="false" />
-  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/mobiperf/SpeedometerApp.java">
+    <entry file="file://$PROJECT_DIR$/src/com/mobiperf/Logger.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="308" column="23" selection-start="10879" selection-end="10879" vertical-scroll-proportion="0.0">
+        <state line="9" column="13" selection-start="206" selection-end="206" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/mobiperf/UpdateIntent.java">
+    <entry file="file://$PROJECT_DIR$/src/com/mobiperf/util/MLabNS.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="29" selection-start="1930" selection-end="1930" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/empty.xml">
-      <provider selected="true" editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="62" column="75" selection-start="2856" selection-end="2856" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/mobiperf/measurements/PingTask.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="139" column="14" selection-start="4946" selection-end="4946" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#4530#4559#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/measurement_creation_main.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="46" column="23" selection-start="2371" selection-end="2371" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/mobiperf/util/Util.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="13" selection-start="1417" selection-end="1417" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/mobiperf/MeasurementOnActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="45" column="56" selection-start="1196" selection-end="1196" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/mobiperf/util/IOUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="27" selection-start="890" selection-end="890" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/mobiperf/MeasurementResult.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="265" column="17" selection-start="9635" selection-end="9635" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/mobiperf/MeasurementScheduler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="668" column="83" selection-start="24294" selection-end="24294" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/mobiperf/MeasurementTask.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="162" column="25" selection-start="6063" selection-end="6063" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/mobiperf/MeasurementCreationActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="281" column="29" selection-start="12664" selection-end="12664" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/mobiperf/MeasurementDesc.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="98" column="38" selection-start="3853" selection-end="3853" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/mobiperf/measurements/TCPThroughputTask.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="120" column="23" selection-start="4902" selection-end="4902" vertical-scroll-proportion="0.0">
+        <state line="39" column="29" selection-start="1254" selection-end="1254" vertical-scroll-proportion="0.093627065">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/mobiperf/measurements/UDPBurstTask.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="20" selection-start="1300" selection-end="1300" vertical-scroll-proportion="0.39580908">
+        <state line="117" column="36" selection-start="4125" selection-end="4125" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.classpath">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/mobiperf/MeasurementTask.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="60" column="9" selection-start="2485" selection-end="2485" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/mobiperf/measurements/PingTask.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="58" column="13" selection-start="1927" selection-end="1927" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/mobiperf/measurements/HttpTask.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="53" column="13" selection-start="1791" selection-end="1791" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/mobiperf/measurements/TracerouteTask.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="46" column="13" selection-start="1508" selection-end="1508" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/mobiperf/measurements/TCPThroughputTask.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="312" column="35" selection-start="12117" selection-end="12117" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/mobiperf/About.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="34" column="18" selection-start="1168" selection-end="1168" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="54" selection-start="900" selection-end="900" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/mobiperf/util/AlarmWakeLock.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="37" selection-start="468" selection-end="468" vertical-scroll-proportion="0.23076923">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/mobiperf/MeasurementDesc.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="22" selection-start="973" selection-end="973" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/mobiperf/MeasurementCreationActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="239" column="34" selection-start="10573" selection-end="10573" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/mobiperf/MeasurementScheduler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="66" column="13" selection-start="2293" selection-end="2293" vertical-scroll-proportion="0.033707865">
           <folding />
         </state>
       </provider>
@@ -838,7 +693,7 @@
       </state>
       <state key="FacetStructureConfigurable.UI">
         <settings>
-          <last-edited>Detection</last-edited>
+          <last-edited>Android</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -873,7 +728,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>SpeedometerTest</last-edited>
+          <last-edited>Mobiperf</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

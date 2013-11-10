@@ -95,10 +95,10 @@ public abstract class MeasurementDesc {
   }
 
   public String getDir() {
-	if (parameters != null) {
-		if (parameters.containsKey("direction"))
-		  return parameters.get("direction");
-	}
+    if (parameters != null) {
+      if (parameters.containsKey("direction"))
+        return parameters.get("direction");
+    }
     return "na";
   }
 }
