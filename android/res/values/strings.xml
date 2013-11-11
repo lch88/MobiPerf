@@ -18,8 +18,8 @@
     <string name="menuLog">System Log</string>
     <string name="measureIdLabel">ID: </string>
     <string name="targetHostPrompt">Target Hostname/IP</string>
-    <string name="defaultTargetHost">143.248.92.63</string>
-    <string name="targetHostHint">Default target host is 143.248.92.63</string>
+    <string name="defaultTargetHost">192.168.123.105</string>
+    <string name="targetHostHint">Default target host is 192.168.123.105</string>
     <string name="measurementTypePrompt">Measurement Type</string>
     <string name="defaultDomain">www.google.com</string>
     <string name="pingTargetHint">www.google.com</string>

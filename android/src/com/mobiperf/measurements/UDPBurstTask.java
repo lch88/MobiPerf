@@ -274,6 +274,7 @@ public class UDPBurstTask extends MeasurementTask {
 				dataOut.writeInt(i);
 				dataOut.writeInt(desc.packetSizeByte);
 				dataOut.writeInt(seq);
+				dataOut.writeInt(this.getId());
 				for (int j = 0; j < desc.packetSizeByte
 						- UDPBurstTask.MIN_PACKETSIZE; j++) {
 					// Fill in the rest of the packet with zeroes.
