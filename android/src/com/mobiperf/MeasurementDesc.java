@@ -96,8 +96,14 @@ public abstract class MeasurementDesc {
 
   public String getDir() {
     if (parameters != null) {
-      if (parameters.containsKey("direction"))
-        return parameters.get("direction");
+      if (parameters.containsKey("direction")) {
+        if (parameters.get("direction").equals("Up"))
+          return "up";
+        else
+          return "down";
+      }
+    } else {
+      Logger.d("parameters is null");
     }
     return "na";
   }

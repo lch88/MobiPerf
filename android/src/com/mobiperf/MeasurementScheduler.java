@@ -666,7 +666,7 @@ public class MeasurementScheduler extends Service {
                   result = future.get();
                   // Write result to file
                   Logger.d("About to write");
-                  IOUtils.writeResultToFile(task.getId(), task.getType(), task.getDescription().getDir(), result.toString() + "\n" + result.getDetail());
+                  IOUtils.writeResultToFile(task.getId(), task.getType(), result.getDirection(), result.toString() + "\n" + result.getDetail());
                   finishedTasks.add(result);
                 } else {
                   Logger.e("Task execution was canceled");

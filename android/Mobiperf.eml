@@ -3,6 +3,6 @@
 	<exclude-output/>
 	<contentEntry url="file://$MODULE_DIR$"/>
 	<lib name="myjson-1.7.1.jar" scope="COMPILE">
-		<relative-module-cls project-related="jar://$PROJECT_DIR$/lib/myjson-1.7.1.jar!/"/>
+		<relative-module-cls project-related="jar://$PROJECT_DIR$/libs/myjson-1.7.1.jar!/"/>
 	</lib>
 </component>

@@ -48,6 +48,7 @@ public class MeasurementResult {
   private String taskKey;
   private String type;
   private MeasurementDesc parameters;
+  private String direction;
   private HashMap<String, String> values;
   private String detail;
   
@@ -68,6 +69,7 @@ public class MeasurementResult {
     this.timestamp = timeStamp;
     this.success = success;
     this.parameters = measurementDesc;
+    this.direction = measurementDesc.getDir();
     this.parameters.parameters = null;
     this.values = new HashMap<String, String>();
     detail = "";
@@ -87,7 +89,15 @@ public class MeasurementResult {
   {
 	  return detail;
   }
-  
+
+  public String getDirection() {
+    return direction;
+  }
+
+  public void setDirection(String direction) {
+    this.direction = direction;
+  }
+
   /* Add the measurement results of type String into the class */
   public void addResult(String resultType, Object resultVal) {
     this.values.put(resultType, MeasurementJsonConvertor.toJsonString(resultVal));
