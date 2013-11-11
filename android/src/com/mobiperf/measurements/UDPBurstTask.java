@@ -2,6 +2,7 @@
 
 package com.mobiperf.measurements;
 
+import com.mobiperf.DeviceProperty;
 import com.mobiperf.Logger;
 import com.mobiperf.MeasurementDesc;
 import com.mobiperf.MeasurementError;
@@ -594,16 +595,18 @@ public class UDPBurstTask extends MeasurementTask {
 				isMeasurementSuccessful = true;
 			}
 		} catch (MeasurementError e) {
-			Logger.e("" + e);
+			Logger.e("MeasurementError " + e);
 			throw e;
 		} finally {
 			socket.close();
 		}
+		
+		DeviceProperty dp = new DeviceProperty(".", ".", 0, ".", ".", ".", 0.0, 0.0, ".", ".", ".", 0, false, ".", 0);
 
 		MeasurementResult result = new MeasurementResult(
 				phoneUtils.getDeviceInfo().deviceId,
-				phoneUtils.getDeviceProperty(), UDPBurstTask.TYPE,
-				System.currentTimeMillis() * 1000, isMeasurementSuccessful,
+				dp /*phoneUtils.getDeviceProperty()*/, UDPBurstTask.TYPE,
+				System.currentTimeMillis() * 1000, true/*isMeasurementSuccessful*/,
 				this.measurementDesc);
 
 		result.addResult("target_ip", targetIp);

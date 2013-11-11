@@ -1,6 +1,12 @@
 package com.mobiperf.util;
 
+import android.app.Activity;
+import android.app.Service;
+import android.content.Context;
 import android.os.Environment;
+import android.os.storage.StorageManager;
+import android.widget.Toast;
+
 import com.mobiperf.Logger;
 
 import java.io.BufferedWriter;
@@ -20,9 +26,9 @@ public class IOUtils {
   public static final String ROOT_PATH = "/mobiperf";
   public static final String OUTPUT_PATH = "/results";
 
-  public static void writeResultToFile(int id, String mType, String mDir, String rslt) {
+  public static void writeResultToFile(/*Activity mother,*/int id, String mType, String mDir, String rslt) {
     String filename = String.format("%04d_%s_%s.txt", id, mType, mDir);
-    String path = Environment.getExternalStorageDirectory() + ROOT_PATH + OUTPUT_PATH;
+    String path = /*mother.getFilesDir()*/"/mnt/sdcard" + ROOT_PATH + OUTPUT_PATH;
     File resultPath = new File(path);
     Logger.d(path);
     if (!resultPath.exists()) {
@@ -31,7 +37,7 @@ public class IOUtils {
     File resultFile = new File(path, filename);
     _writeToFile(resultFile, rslt);
   }
-
+  
   private static boolean _writeToFile(File file, String data) {
     boolean result = true;
     try {

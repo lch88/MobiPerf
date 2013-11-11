@@ -680,6 +680,7 @@ public class MeasurementScheduler extends Service {
                   // Don't do anything with this - no need to report skipped measurements
                   sendStringMsg("Task skipped - " + e.getCause().toString() + "\n" + task);
                   Logger.i("Task skipped", e.getCause());
+                  
                 } else {
                   // Log the error
                   sendStringMsg("Task failed - " + e.getCause().toString() + "\n" + task);
@@ -740,7 +741,7 @@ public class MeasurementScheduler extends Service {
         uploadResults();
         //getTasksFromServer();
         // Also reset checkin if we get a success
-        resetCheckin();
+//        resetCheckin();
         // Schedule the new tasks
         handleMeasurement();
       } catch (Exception e) {
