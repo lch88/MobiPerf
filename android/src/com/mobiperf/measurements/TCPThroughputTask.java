@@ -16,6 +16,7 @@ import java.util.Map;
 import java.util.Random;
 
 import com.mobiperf.Config;
+import com.mobiperf.DeviceProperty;
 import com.mobiperf.Logger;
 import com.mobiperf.MeasurementDesc;
 import com.mobiperf.MeasurementError;
@@ -359,11 +360,14 @@ public class TCPThroughputTask extends MeasurementTask {
       throw new MeasurementError("Task gets interrrupted");
     }
 
+    DeviceProperty dp = new DeviceProperty(".", ".", 0, ".", ".", ".", 0.0, 0.0, ".", ".", ".", 0, false, ".", 0);
+    
     MeasurementResult result = new MeasurementResult(
                                phoneUtils.getDeviceInfo().deviceId,
-                               phoneUtils.getDeviceProperty(), TCPThroughputTask.TYPE,
-                               System.currentTimeMillis() * 1000, isMeasurementSuccessful,
+                               dp, TCPThroughputTask.TYPE,
+                               System.currentTimeMillis() * 1000, true,
                                this.measurementDesc);
+    
     // TODO (Haokun): add more results if necessary
     result.addResult("tcp_speed_results", this.samplingResults);
     result.addResult("data_limit_exceeded", this.DATA_LIMIT_EXCEEDED);
