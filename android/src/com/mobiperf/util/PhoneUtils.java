@@ -519,7 +519,7 @@ public class PhoneUtils {
   }
 
   /**
-   * Types of interfaces to return from {@link #getUpInterfaces(InterfaceType)}.
+   * Types of interfaces to return from {@link: #getUpInterfaces(InterfaceType)}.
    */
   public enum InterfaceType {
     /** Local and external interfaces. */
@@ -825,5 +825,28 @@ public class PhoneUtils {
         location.getProvider(), networkType, carrierName, 
         utils.getCurrentBatteryLevel(), utils.isCharging(), 
         utils.getCellInfo(false), utils.getCurrentRssi());
-  }  
+  }
+
+  /** Returns the DeviceProperty needed to report the measurement result */
+  public DeviceProperty getDevicePropertyNoInternet() {
+    String carrierName = telephonyManager.getNetworkOperatorName();
+
+    NetworkInfo activeNetwork = connectivityManager.getActiveNetworkInfo();
+    String networkType = PhoneUtils.getPhoneUtils().getNetwork();
+    String ipConnectivity = IP_TYPE_NONE;
+    String dnResolvability = IP_TYPE_NONE;
+    Logger.w("IP connectivity is " + ipConnectivity);
+    Logger.w("DN resolvability is " + dnResolvability);
+    if (activeNetwork != null) {
+      networkType = activeNetwork.getTypeName();
+    }
+    String versionName = PhoneUtils.getPhoneUtils().getAppVersionName();
+    PhoneUtils utils = PhoneUtils.getPhoneUtils();
+
+    return new DeviceProperty(getDeviceInfo().deviceId, versionName,
+        System.currentTimeMillis() * 1000, getVersionStr(), ipConnectivity,
+        dnResolvability, 0, 0, "None", networkType, carrierName,
+        utils.getCurrentBatteryLevel(), utils.isCharging(),
+        utils.getCellInfo(false), utils.getCurrentRssi());
+  }
 }

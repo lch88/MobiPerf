@@ -359,12 +359,10 @@ public class TCPThroughputTask extends MeasurementTask {
       Logger.e("Interrupted captured");
       throw new MeasurementError("Task gets interrrupted");
     }
-
-    DeviceProperty dp = new DeviceProperty(".", ".", 0, ".", ".", ".", 0.0, 0.0, ".", ".", ".", 0, false, ".", 0);
     
     MeasurementResult result = new MeasurementResult(
                                phoneUtils.getDeviceInfo().deviceId,
-                               dp, TCPThroughputTask.TYPE,
+                               phoneUtils.getDevicePropertyNoInternet(), TCPThroughputTask.TYPE,
                                System.currentTimeMillis() * 1000, true,
                                this.measurementDesc);
     

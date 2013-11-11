@@ -200,7 +200,7 @@ public class MeasurementScheduler extends Service {
     this.registerReceiver(broadcastReceiver, filter);
     // TODO(mdw): Make this a user-selectable option
     addIconToStatusBar();
-    //startMobiperfInForeground();
+//    startMobiperfInForeground();
   }
   
   public boolean hasBatteryToScheduleExperiment() {
@@ -665,8 +665,6 @@ public class MeasurementScheduler extends Service {
                 if (!future.isCancelled()) {
                   result = future.get();
                   // Write result to file
-                  Logger.d("About to write");
-                  IOUtils.writeResultToFile(task.getId(), task.getType(), result.getDirection(), result.toString() + "\n" + result.getDetail());
                   finishedTasks.add(result);
                 } else {
                   Logger.e("Task execution was canceled");
@@ -857,6 +855,8 @@ public class MeasurementScheduler extends Service {
         broadcastMeasurementStart();
         result = realTask.call();
       } finally {
+        Logger.d("About to write");
+        IOUtils.writeResultToFile(realTask.getId(), realTask.getType(), result.getDirection(), result.toString() + "\n" + result.getDetail());
         setCurrentTask(null);
         broadcastMeasurementEnd(result);
         PhoneUtils.getPhoneUtils().releaseWakeLock();
@@ -864,6 +864,8 @@ public class MeasurementScheduler extends Service {
         persistState();
       }
       return result;
+
+
     }
   }
   

@@ -61,8 +61,13 @@ public class MeasurementCreationActivity extends Activity {
   private ArrayAdapter<String> spinnerValues;
   private String udpDir;
   private String tcpDir;
+  private int lastId;
 
-  TextView idTextView;
+  public static final String PREFS_NAME = "MobiperfInternalData";
+  public static SharedPreferences internalData;
+  public static SharedPreferences.Editor internalDataEditor;
+
+  EditText idEditText;
   TextView countTextView;
 
   @Override
@@ -106,8 +111,12 @@ public class MeasurementCreationActivity extends Activity {
     radioTCPUp.setOnClickListener(new TCPRadioOnClickListener());
     radioTCPDown.setOnClickListener(new TCPRadioOnClickListener());
 
-    EditText idEditText = (EditText) findViewById(R.id.measureIdEditText);
+    idEditText = (EditText) findViewById(R.id.measureIdEditText);
     idEditText.onEditorAction(EditorInfo.IME_ACTION_DONE);
+
+    // Prepare shared preferences
+    internalData = getSharedPreferences(PREFS_NAME, 0);
+    internalDataEditor = internalData.edit();
   }
 
   private void setupEditTextFocusChangeListener() {
@@ -128,6 +137,22 @@ public class MeasurementCreationActivity extends Activity {
   protected void onStart() {
     super.onStart();
     this.populateMeasurementSpecificArea();
+  }
+
+  @Override
+  protected void onResume() {
+    super.onResume();
+    lastId = internalData.getInt("lastId", 1);
+    idEditText = (EditText) findViewById(R.id.measureIdEditText);
+    idEditText.setText(Integer.toString(lastId));
+  }
+
+  @Override
+  protected void onPause() {
+    lastId = lastId + 1;
+    internalDataEditor.putInt("lastId", lastId);
+    internalDataEditor.commit();
+    super.onPause();
   }
 
   private void clearMeasurementSpecificViews(TableLayout table) {

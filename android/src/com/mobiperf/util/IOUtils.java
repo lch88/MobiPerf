@@ -13,22 +13,16 @@ import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.util.Date;
 
-/**
- * Created with IntelliJ IDEA.
- * User: changhoon
- * Date: 2013. 11. 8.
- * Time: PM 4:49
- * To change this template use File | Settings | File Templates.
- */
 public class IOUtils {
 
   public static final String ROOT_PATH = "/mobiperf";
   public static final String OUTPUT_PATH = "/results";
 
-  public static void writeResultToFile(/*Activity mother,*/int id, String mType, String mDir, String rslt) {
-    String filename = String.format("%04d_%s_%s.txt", id, mType, mDir);
-    String path = /*mother.getFilesDir()*/"/mnt/sdcard" + ROOT_PATH + OUTPUT_PATH;
+  public static void writeResultToFile(int id, String mType, String mDir, String rslt) {
+    String filename = String.format("%04d_%s_%s_%s.txt", id, mType, mDir, new Date());
+    String path = "/mnt/sdcard" + ROOT_PATH + OUTPUT_PATH;
     File resultPath = new File(path);
     Logger.d(path);
     if (!resultPath.exists()) {

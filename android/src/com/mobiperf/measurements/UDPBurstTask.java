@@ -600,13 +600,11 @@ public class UDPBurstTask extends MeasurementTask {
 		} finally {
 			socket.close();
 		}
-		
-		DeviceProperty dp = new DeviceProperty(".", ".", 0, ".", ".", ".", 0.0, 0.0, ".", ".", ".", 0, false, ".", 0);
 
 		MeasurementResult result = new MeasurementResult(
 				phoneUtils.getDeviceInfo().deviceId,
-				dp /*phoneUtils.getDeviceProperty()*/, UDPBurstTask.TYPE,
-				System.currentTimeMillis() * 1000, true/*isMeasurementSuccessful*/,
+				phoneUtils.getDevicePropertyNoInternet(), UDPBurstTask.TYPE,
+				System.currentTimeMillis() * 1000, true,
 				this.measurementDesc);
 
 		result.addResult("target_ip", targetIp);
