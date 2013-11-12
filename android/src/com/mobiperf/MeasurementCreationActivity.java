@@ -61,7 +61,7 @@ public class MeasurementCreationActivity extends Activity {
   private ArrayAdapter<String> spinnerValues;
   private String udpDir;
   private String tcpDir;
-  private int lastId;
+  private int curId;
 
   public static final String PREFS_NAME = "MobiperfInternalData";
   public static SharedPreferences internalData;
@@ -142,15 +142,16 @@ public class MeasurementCreationActivity extends Activity {
   @Override
   protected void onResume() {
     super.onResume();
-    lastId = internalData.getInt("lastId", 1);
+    curId = internalData.getInt("curId", 1);
     idEditText = (EditText) findViewById(R.id.measureIdEditText);
-    idEditText.setText(Integer.toString(lastId));
+    idEditText.setText(Integer.toString(curId));
   }
 
   @Override
   protected void onPause() {
-    lastId = lastId + 1;
-    internalDataEditor.putInt("lastId", lastId);
+    int lastId = Integer.parseInt(idEditText.getText().toString());
+    curId = lastId + 1;
+    internalDataEditor.putInt("curId", lastId);
     internalDataEditor.commit();
     super.onPause();
   }
@@ -182,7 +183,7 @@ public class MeasurementCreationActivity extends Activity {
     }
   }
 
-  private void hideKyeboard(EditText textBox) {
+  private void hideKeyboard(EditText textBox) {
     if (textBox != null) {
       InputMethodManager imm = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
       imm.hideSoftInputFromWindow(textBox.getWindowToken(), 0);
@@ -388,7 +389,7 @@ public class MeasurementCreationActivity extends Activity {
           break;
       }
       if (!hasFocus) {
-        hideKyeboard((EditText) v);
+        hideKeyboard((EditText) v);
       }
     }
   }

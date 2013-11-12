@@ -13,15 +13,17 @@ import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.text.SimpleDateFormat;
 import java.util.Date;
 
 public class IOUtils {
 
   public static final String ROOT_PATH = "/mobiperf";
   public static final String OUTPUT_PATH = "/results";
+  public static SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy_MM_dd_HH_mm_ss");
 
   public static void writeResultToFile(int id, String mType, String mDir, String rslt) {
-    String filename = String.format("%04d_%s_%s_%s.txt", id, mType, mDir, new Date());
+    String filename = String.format("%04d_%s_%s_%s.txt", id, mType, mDir, dateFormat.format(new Date()));
     String path = "/mnt/sdcard" + ROOT_PATH + OUTPUT_PATH;
     File resultPath = new File(path);
     Logger.d(path);
