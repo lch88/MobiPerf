@@ -14,6 +14,9 @@ tcpserver/*.jar
 WaterWIFIPerf/bin/
 WaterWIFIPerf/images/
 WaterWIFIPerf/.settings/
+AudioTest/bin/
+AudioTest/images/
+AudioTest/.settings/
 
 # These are produced by templates
 server/app.yaml
@@ -21,6 +24,7 @@ server/gspeedomenter/config_private.py
 server/gspeedometer/templates/base.html
 android/gen/
 WaterWIFIPerf/gen/
+AudioTest/gen/
 
 # This is for development data (not to be tracked)
 server/dev_data/
@@ -30,7 +34,9 @@ server/dev_data/
 *.DS_Store
 android/*/*/.DS_Store
 WaterWIFIPerf/*/*/.DS_Store
+AudioTest/*/*/.DS_Store
 
 # Project files
 android/android.iws
+AudioTest/android.iws
 WaterWIFIPerf/android.iws
